@@ -41,3 +41,21 @@
   font-size: 1.3rem;
   font-weight: 900;
 }
+
+.EditorsPick {
+  height: 57rem;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+.EditorsPickFlexNews {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.EditorsPickFlexAlign {
+  position: absolute;
+  top: 33em;
+  left: 10.2em;
+}

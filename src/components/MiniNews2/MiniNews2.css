@@ -1,21 +1,22 @@
-.MiniNews {
+.MiniNews2 {
     margin-left: 10rem;
     position: relative;
-    padding: 0.5rem;
-    width: 40rem;
-    height: 13rem;
+    padding: 0.7rem;
+    width: 55rem;
+    height: 30rem;
     box-shadow: 0 15px 15px 0 var(--darker), 0 15px 15px 0 var(--darker);
     border: 1px solid var(--darker);
     font-size: 0.7rem;
     border-radius: 1rem;
+    text-align: left;
 }
 
-.MiniSource {
+.Mini2Source {
     color: white;
     font-weight: 700;
     position: absolute;
-    top: -1em;
-    left: -1em;
+    bottom: 2em;
+    left: 27em;
     height: 2em;
     transform: skew(-20deg);
     width: fit-content;
@@ -27,39 +28,49 @@
     border-radius: 0.2em;
 }
 
-.MiniWrapper2 {
-    margin-left: -6em;
+.Desc2Wrapper{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+    width: 40%;
+    position: absolute;
+    top: 16em;
 }
 
-.TitleWrapper {
+.Mini2Wrapper {
+    position: absolute;
+    top: 2rem;
+    left: 3.5%;
+}
+
+.Title2Wrapper {
     position: absolute;
     color: white;
     font-weight: 700;
     top: 3em;
-    width: 50%;
-    font-size: 1.7em;
+    width: 40%;
+    font-size: 2.4em;
 }
 
-.TitleWrapper:hover {
+.Title2Wrapper:hover {
     text-decoration: underline;
     text-decoration-color: orangered;
     cursor: pointer;
 }
 
-.MiniNews img {
-    width: 20em;
-    height: 15em;
+.MiniNews2 img {
+    width: 40em;
+    height: 40em;
     position: absolute;
     top: 1.5em;
     right: 1em;
     border-radius: 0.5em;
 }
 
-.MiniAuthorDate {
-    width: 60%;
+.Mini2AuthorDate {
+    width: 40%;
     position: absolute;
-    bottom: 2em;
-    left: -0.5em;
+    bottom: 5em;
     color: white;
     font-weight: 400;
     font-size: 1.25em;

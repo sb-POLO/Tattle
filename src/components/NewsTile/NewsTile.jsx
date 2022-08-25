@@ -16,7 +16,6 @@ function NewsTile({ news, size, color }) {
                             <p className='NewsTileDate' style={{ color: "gray" }}>{news.publishedAt}</p>
                         </div>
                     </div>
-                    {console.log(news)}
                 </div>
             </div>
         </>

@@ -2,12 +2,14 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Loader from './components/Loader';
 import MiniNews from './components/MiniNews';
+import MiniNews2 from './components/MiniNews2/MiniNews2';
+import MiniNews2Flex from './components/MiniNews2Flex/MiniNews2Flex';
 import NavBar from './components/NavBar';
 import NewsTile from './components/NewsTile/NewsTile';
 import { API_KEY, API_URL } from './constants';
 import { globalData } from './globalData'
 
-const tileColor = ["red", "lightseagreen", "orange"]
+const tileColor = ["red", "lightseagreen", "orange", "deeppink"]
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -55,7 +57,22 @@ function App() {
       </div>
       <br />
       <br />
-      <div></div>
+      <div className='EditorsPick'>
+        {news.slice(5, 6).map((item, index) => {
+          return (
+            <MiniNews2 key={index} news={item} color={tileColor[3]} />
+          )
+        })}
+        <div className='EditorsPickFlexAlign'>
+          <div className='EditorsPickFlexNews'>
+            {news.slice(6, 9).map((item, index) => {
+              return (
+                <MiniNews2Flex key={index} news={item} color={tileColor[index % 4]} />
+              )
+            })}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

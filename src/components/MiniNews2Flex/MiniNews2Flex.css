@@ -1,68 +1,59 @@
-.MiniNews {
-    margin-left: 10rem;
+.MiniNews2Flex {
+    margin: 2rem;
     position: relative;
-    padding: 0.5rem;
-    width: 40rem;
-    height: 13rem;
+    padding: 0.7rem;
+    width: 17rem;
+    height: 12rem;
     box-shadow: 0 15px 15px 0 var(--darker), 0 15px 15px 0 var(--darker);
     border: 1px solid var(--darker);
-    font-size: 0.7rem;
+    font-size: 0.2rem;
     border-radius: 1rem;
+    text-align: left;
 }
 
-.MiniSource {
+.Mini2FlexSource {
     color: white;
     font-weight: 700;
     position: absolute;
-    top: -1em;
-    left: -1em;
+    bottom: -0.5em;
+    left: 0em;
     height: 2em;
     transform: skew(-20deg);
     width: fit-content;
     padding: 1em;
-    font-size: 1.3em;
+    font-size: 3.7em;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0.2em;
 }
 
-.MiniWrapper2 {
-    margin-left: -6em;
-}
+/* .Mini2FlexWrapper{
+    position: absolute;
+    top: 30rem;
+} */
 
-.TitleWrapper {
+.Title2FlexWrapper {
     position: absolute;
     color: white;
     font-weight: 700;
-    top: 3em;
-    width: 50%;
-    font-size: 1.7em;
+    bottom: -6em;
+    width: 100%;
+    font-size: 5em;
 }
 
-.TitleWrapper:hover {
+.Title2FlexWrapper:hover {
     text-decoration: underline;
     text-decoration-color: orangered;
     cursor: pointer;
 }
 
-.MiniNews img {
-    width: 20em;
-    height: 15em;
+.Mini2FLexAuthorDate {
+    width: 100%;
     position: absolute;
-    top: 1.5em;
-    right: 1em;
-    border-radius: 0.5em;
-}
-
-.MiniAuthorDate {
-    width: 60%;
-    position: absolute;
-    bottom: 2em;
-    left: -0.5em;
-    color: white;
-    font-weight: 400;
-    font-size: 1.25em;
+    bottom: -10em;
+    font-weight: 500;
+    font-size: 4em;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 }

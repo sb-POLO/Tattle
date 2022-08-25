@@ -35,12 +35,14 @@
 
 .login-btn {
     background-color: red;
+    border: 1px solid red;
+    box-shadow: 1px 1px 10px red;
     width: 6.5rem;
     height: 2.5rem;
     border-radius: 0.6rem;
     color: white;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .search {
@@ -49,6 +51,7 @@
     height: 2rem;
     border-radius: 0.5rem;
     padding: 1rem;
-    border: 0.15rem solid gray;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 10px gray;
     font-weight: bolder;
 }
