@@ -1,8 +1,9 @@
 .NewsTileLarge {
     position: relative;
     margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 15px 15px 0 var(--darker), 0 15px 15px 0 var(--darker);
     border: 1px solid var(--darker);
-    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.8);
     width: 55rem;
     height: 35rem;
     color: white;
@@ -12,32 +13,31 @@
     align-items: center;
     text-align: left;
     font-size: 1rem;
-    border-radius: 0.5rem;
 }
 
 .NewsTileSmall {
     position: relative;
     margin: 1rem;
     border: 1px solid var(--darker);
-    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
+    box-shadow: 0 15px 15px 0 var(--darker), 0 15px 15px 0 var(--darker);
     width: 32rem;
-    height: 25rem;
+    height: 17rem;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     text-align: left;
-    font-size: 0.66rem;
-    border-radius: 0.5rem;
+    font-size: 0.7rem;
 }
 
-.NewsTileMedium {
+/* .NewsTileMedium {
     position: relative;
     margin: 1rem;
     border: 1px solid var(--darker);
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.8);
-    width: 41rem;
+    width: 40rem;
     height: 30rem;
     color: white;
     display: flex;
@@ -47,14 +47,18 @@
     text-align: left;
     font-size: 0.8rem;
     border-radius: 0.5rem;
-}
+} */
 
 .NewsTileTitle {
     font-size: 2em;
     font-weight: 700;
 }
 
-
+.NewsTileTitle:hover {
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    cursor: pointer;
+}
 
 .NewsTileInfo {
     background-color: rgba(0, 0, 0, 0.8);
@@ -76,7 +80,6 @@
 .NewsTileSourceLarge {
     padding: 0.5em;
     height: 2em;
-    background-color: red;
     transform: skew(-20deg);
     font-weight: 700;
     position: absolute;
@@ -85,18 +88,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0.2em;
 }
 
 .NewsTileSourceSmall {
     padding: 0.5em;
     height: 2em;
-    background-color: red;
     transform: skew(-20deg);
     font-weight: 700;
     position: absolute;
-    top: 21.1em;
+    top: 13em;
     left: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0.2em;
+}
+
+.TileWrapperLarge {
+    position: absolute;
+}
+
+.TileWrapperSmall1 {
+    position: absolute;
+    left: 58em;
+}
+
+.TileWrapperSmall2 {
+    position: absolute;
+    bottom: 0.9em;
+    left: 58em;
+
 }

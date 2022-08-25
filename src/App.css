@@ -2,10 +2,42 @@
   text-align: center;
 }
 
-.NewsTileWrapper {
+.NewsTileWrapper1 {
   width: 100vw;
-  display: flex;
+  height: 38rem;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center; */
+  position: relative;
+  left: 12%;
+}
+
+.MiniNewsWrapper1 {
+  position: relative;
+  left: 7.5%;
+  display: flex;
   align-items: center;
+}
+
+.Header {
+  position: absolute;
+  left: 12%;
+  width: 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Lean {
+  width: 0.25rem;
+  height: 2rem;
+  background-color: orange;
+  transform: skew(-20deg);
+}
+
+.HeaderTitle {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 900;
 }
