@@ -3,7 +3,9 @@ import './Loader.css';
 const Loader = () => {
     return (
         <>
-            <div className="lds-facebook"><div></div><div></div><div></div></div>
+            <div className='Loader'>
+                <div className="lds-facebook"><div></div><div></div><div></div></div>
+            </div>
         </>
     )
 }

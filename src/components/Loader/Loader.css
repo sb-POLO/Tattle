@@ -1,3 +1,9 @@
+.Loader {
+    position: absolute;
+    top: 48%;
+    left: 48%;
+}
+
 .lds-facebook {
     display: inline-block;
     position: relative;
