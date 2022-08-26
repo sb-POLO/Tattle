@@ -1,11 +1,11 @@
 import './NavBar.css';
-import Logo from '../../assets/Logo_1.png';
+import Logo from '../../assets/Logo_2.png';
 
 function NavBar() {
     return (
         <>
             <nav className="NavBar">
-                <img  id="Logo" src={Logo} alt="Logo"/>
+                <img id="Logo" src={Logo} alt="Logo" />
                 <ul className='NavList'>
                     <li>Home</li>
                     <li>Country</li>

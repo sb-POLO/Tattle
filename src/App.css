@@ -36,15 +36,37 @@
   transform: skew(-20deg);
 }
 
+.LeanSmall {
+  width: 0.25rem;
+  height: 1.5rem;
+  background-color: orange;
+  transform: skew(-20deg);
+}
+
+.FollowUsHeader {
+  position: absolute;
+  left: 63%;
+  top: 63%;
+  width: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .HeaderTitle {
   color: white;
   font-size: 1.3rem;
   font-weight: 900;
 }
 
+.FollowUsTitle {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
 .EditorsPick {
   height: 57rem;
-  /* border: 1px solid red; */
   position: relative;
 }
 
@@ -57,5 +79,11 @@
 .EditorsPickFlexAlign {
   position: absolute;
   top: 33em;
-  left: 10.2em;
+  left: 10.25em;
+}
+
+.MostReadContainer {
+  height: 50rem;
+  background-image: linear-gradient(135deg, #020381 0%, #2874fc 100%);
+  opacity: 0.5;
 }

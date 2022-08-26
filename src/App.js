@@ -6,8 +6,12 @@ import MiniNews2 from './components/MiniNews2/MiniNews2';
 import MiniNews2Flex from './components/MiniNews2Flex/MiniNews2Flex';
 import NavBar from './components/NavBar';
 import NewsTile from './components/NewsTile/NewsTile';
+import SocialMedia from './components/SocialMedia/SocialMedia';
+import Weather from './components/Weather/Weather';
 import { API_KEY, API_URL } from './constants';
 import { globalData } from './globalData'
+
+console.clear();
 
 const tileColor = ["red", "lightseagreen", "orange", "deeppink"]
 
@@ -72,6 +76,19 @@ function App() {
             })}
           </div>
         </div>
+        <Weather />
+        <div className='FollowUsHeader'>
+          <div className='LeanSmall'></div>
+          <span className='FollowUsTitle'>Follow US</span>
+          <div className='LeanSmall'></div>
+        </div>
+        <SocialMedia />
+      </div>
+      <br />
+      <br />
+      <br />
+      <div className='MostReadContainer'>
+
       </div>
     </div>
   );

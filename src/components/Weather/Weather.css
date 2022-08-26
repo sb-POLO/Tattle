@@ -1,0 +1,109 @@
+.WeatherContainer {
+    position: relative;
+    color: white;
+    border: 1px solid red;
+    width: 30rem;
+    height: 30rem;
+    box-shadow: 0 15px 15px 0 var(--darker), 0 15px 15px 0 var(--darker);
+    border: 1px solid var(--darker);
+    border-radius: 1rem;
+}
+
+.WeatherWrapper {
+    position: absolute;
+    left: 75em;
+    top: 2rem;
+}
+
+.WeatherTitle {
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: fit-content;
+    padding: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2em;
+    background-color: orange;
+}
+
+#WeatherIcon {
+    width: 12em;
+    height: 12em;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+}
+
+.Location {
+    position: absolute;
+    top: 6em;
+    left: 1.7em;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.Temp {
+    font-size: 5em;
+    font-weight: 700;
+    position: absolute;
+    left: 3.1em;
+    top: 0.7em;
+}
+
+.Weather {
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: gray;
+    top: 10.5em;
+    left: 4em;
+}
+
+.WindIcon {
+    position: absolute;
+    top: 11.5em;
+    left: 13em;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: orange;
+}
+
+.Wind {
+    position: absolute;
+    top: 11.5em;
+    left: 16.5em;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.WeatherDate {
+    position: absolute;
+    top: 18em;
+    left: 6.5em;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.HumidIcon {
+    position: absolute;
+    top: 13.5em;
+    left: 13em;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: orange;
+}
+
+.Humid {
+    position: absolute;
+    top: 13.5em;
+    left: 18.3em;
+    font-size: 1.2em;
+    font-weight: 500;
+}
