@@ -37,7 +37,7 @@
     width: 12em;
     height: 12em;
     position: absolute;
-    top: 2em;
+    top: 2.5em;
     left: 2em;
 }
 
@@ -85,7 +85,7 @@
 
 .WeatherDate {
     position: absolute;
-    top: 18em;
+    top: 19em;
     left: 6.5em;
     font-size: 1.2em;
     font-weight: 600;
