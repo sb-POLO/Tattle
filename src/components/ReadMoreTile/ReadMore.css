@@ -1,5 +1,4 @@
-.MiniNews {
-    margin-left: 10rem;
+.ReadMoreTile {
     position: relative;
     padding: 0.5rem;
     width: 40rem;
@@ -8,58 +7,56 @@
     border: 1px solid var(--darker);
     font-size: 0.7rem;
     border-radius: 1rem;
+
 }
 
-.MiniSource {
+.ReadMoreSource {
     color: white;
     font-weight: 700;
     position: absolute;
-    top: -1em;
-    left: -1em;
+    bottom: 1em;
+    left: -3em;
     height: 2em;
     transform: skew(-20deg);
     width: fit-content;
     padding: 1em;
-    font-size: 1.3em;
+    font-size: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0.2em;
 }
 
-.MiniWrapper2 {
-    margin-left: -6em;
-}
-
-.TitleWrapper {
+.ReadMoreMiniTitle {
     position: absolute;
     color: white;
     font-weight: 700;
     top: 3em;
+    right: 1em;
     width: 50%;
     font-size: 1.5em;
 }
 
-.TitleWrapper:hover {
+.ReadMoreMiniTitle:hover {
     text-decoration: underline;
     text-decoration-color: orangered;
     cursor: pointer;
 }
 
-.MiniNews img {
+.ReadMoreTile img {
     width: 20em;
     height: 15em;
     position: absolute;
     top: 1.5em;
-    right: 1em;
+    left: 1em;
     border-radius: 0.5em;
 }
 
-.MiniAuthorDate {
+.ReadMoreAuthorDate {
     width: 60%;
     position: absolute;
     bottom: 2em;
-    left: -0.5em;
+    right: -0.5em;
     color: white;
     font-weight: 400;
     font-size: 1.25em;

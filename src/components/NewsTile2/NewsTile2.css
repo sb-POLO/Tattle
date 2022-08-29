@@ -1,0 +1,110 @@
+.NewsTile2Large {
+    position: relative;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 15px 15px 0 var(--darker), 0 15px 15px 0 var(--darker);
+    border: 1px solid var(--darker);
+    width: 45rem;
+    height: 35rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.NewsTile2Small {
+    position: relative;
+    margin: 1rem;
+    border: 1px solid var(--darker);
+    border-radius: 1rem;
+    box-shadow: 0 15px 15px 0 var(--darker), 0 15px 15px 0 var(--darker);
+    width: 20rem;
+    height: 30rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: left;
+    font-size: 0.6rem;
+    background-size: cover;
+}
+
+.NewsTile2Title {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.NewsTile2Title:hover {
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    cursor: pointer;
+}
+
+.NewsTile2Info {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5em;
+    box-shadow: 0px -7px 5px rgba(0, 0, 0, 0.8);
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 500;
+}
+
+.AuthorDate {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.NewsTile2SourceLarge {
+    padding: 0.5em;
+    height: 2em;
+    transform: skew(-20deg);
+    font-weight: 700;
+    position: absolute;
+    top: 19.5em;
+    left: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2em;
+}
+
+.NewsTile2SourceSmall {
+    padding: 0.5em;
+    height: 2em;
+    transform: skew(-20deg);
+    font-weight: 700;
+    position: absolute;
+    top: -1em;
+    left: -2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2em;
+    font-size: 1.2em;
+}
+
+.TileWrapper2Large {
+    position: absolute;
+    top: 8em;
+    left: 14em;
+}
+
+.TileWrapper2Small1 {
+    position: absolute;
+    left: 62em;
+    top: 11em;
+}
+
+.TileWrapper2Small2 {
+    position: absolute;
+    top: 11em;
+    left: 85em;
+
+}

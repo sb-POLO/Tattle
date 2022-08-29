@@ -1,0 +1,32 @@
+.DiscoverTile {
+    position: relative;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 15px 15px 0 var(--darker), 0 15px 15px 0 var(--darker);
+    border: 1px solid var(--darker);
+    width: 22rem;
+    height: 20rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    font-size: 1rem;
+    padding: 0.5rem
+}
+
+.DiscoverTile p {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.DiscoverTile p:hover {
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    cursor: pointer;
+}
+
+.DiscoverTile img{
+    border-radius: 0.5em;
+}
