@@ -1,7 +1,9 @@
 import './NavBar.css';
 import Logo from '../../assets/Logo_2.png';
+import { useNavigate } from 'react-router-dom';
 
 function NavBar({ input, setInput }) {
+    const navigate = useNavigate();
     return (
         <>
             <nav className="NavBar">
@@ -11,7 +13,10 @@ function NavBar({ input, setInput }) {
                     <li>Country</li>
                     <li>Language</li>
                 </ul>
-                <input className='search' placeholder='Search...' value={input} onChange={(e) => { setInput(e.target.value) }}></input>
+                <input className='search' placeholder='Search...' value={input} onChange={(e) => {
+                    setInput(e.target.value)
+                    navigate('/');
+                }}></input>
                 <button className='login-btn'>Sign in</button>
             </nav>
         </>

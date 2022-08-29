@@ -69,6 +69,7 @@
     flex-direction: column;
     justify-content: space-around;
     font-weight: 500;
+    width: inherit;
 }
 
 .AuthorDate {

@@ -14,7 +14,6 @@ function Weather() {
         const data = await response.json();
         setWeatherLoad(false);
         setWeatherInfo(data);
-        console.log(data);
     }
 
     const error = () => {
