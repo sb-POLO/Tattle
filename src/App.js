@@ -13,6 +13,8 @@ import Weather from './components/Weather/Weather';
 import { API_KEY, API_URL } from './constants';
 import { globalData } from './globalData'
 import ReadMore from './components/ReadMoreTile'
+import Footer from './components/Footer/Footer';
+import { Route, Routes } from 'react-router-dom';
 
 console.clear();
 
@@ -23,6 +25,7 @@ function App() {
   const [language, setLanguage] = useState("en");
   const [news, setNews] = useState([]);
   const [lastIndex, setLastIndex] = useState(32);
+  const [input, setInput] = useState("");
   useEffect(() => {
     (async () => {
       setLoading(true);
@@ -39,9 +42,23 @@ function App() {
 
   }, [lastIndex])
 
+  useEffect(() => {
+    while (news.length <= 43) {
+      (async () => {
+        setLoading(true);
+        const finalUrl = `${API_URL}?q=${input}&token=${API_KEY}&lang=${language}`
+        const response = await fetch(finalUrl);
+        const data = await response.json();
+        setNews(data.articles);
+        setLoading(false);
+      })();
+    }
+
+  }, [input])
+
   return (
     <div className="App">
-      <NavBar />
+      <NavBar input={input} setInput={setInput} />
       {loading && <Loader />}
       <div className='NewsTileWrapper1'>
         {news.slice(0, 3).map((item, index) => {
@@ -166,11 +183,12 @@ function App() {
             )
           })}
         </div>
-        <button id="showMore" onClick={() => { setLastIndex((prevState) => prevState + 6) }}>Show More</button>
+        {lastIndex < globalData.length && <button id="showMore" onClick={() => { setLastIndex((prevState) => prevState + 6) }}>Show More</button>}
       </div>
       <br />
       <br />
       <br />
+      <Footer />
     </div>
   );
 }

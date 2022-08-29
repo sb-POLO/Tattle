@@ -1,0 +1,74 @@
+.Footer {
+    background-color: #16181c;
+    width: 100%;
+    height: 15rem;
+    position: relative;
+}
+
+.Footer h4 {
+    color: white;
+    width: 15%;
+    font-weight: 700;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 29%;
+    left: 5%;
+}
+
+.FooterCategoriesWrapper {
+    position: absolute;
+    top: 20%;
+    left: 21.5%;
+    width: 70rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Footer h3 {
+    color: white;
+    width: 15%;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.Footer h5 {
+    color: gray;
+    width: 15%;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.Footer a {
+    text-decoration: none;
+    color: gray;
+    width: 15%;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.Footer h5:hover {
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    cursor: pointer;
+}
+
+.Footer a:hover {
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    cursor: pointer;
+}
+
+.FooterSocialWrapper {
+    position: absolute;
+    top: 20%;
+    left: 60.5%;
+    width: 70rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

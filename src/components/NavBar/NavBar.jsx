@@ -1,7 +1,7 @@
 import './NavBar.css';
 import Logo from '../../assets/Logo_2.png';
 
-function NavBar() {
+function NavBar({ input, setInput }) {
     return (
         <>
             <nav className="NavBar">
@@ -11,7 +11,7 @@ function NavBar() {
                     <li>Country</li>
                     <li>Language</li>
                 </ul>
-                <input className='search' placeholder='Search...'></input>
+                <input className='search' placeholder='Search...' value={input} onChange={(e) => { setInput(e.target.value) }}></input>
                 <button className='login-btn'>Sign in</button>
             </nav>
         </>
