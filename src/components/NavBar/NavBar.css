@@ -34,6 +34,10 @@
     margin-top: 5rem;
 }
 
+#Logo:hover{
+    cursor: pointer;
+}
+
 .login-btn {
     background-color: red;
     border: 1px solid red;

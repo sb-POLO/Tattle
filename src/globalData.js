@@ -95,6 +95,19 @@ export const globalData = [{
     }
 },
 {
+    "title": "Here are the top 10 ASX 200 shares today",
+    "description": "Monday was rough on the S&P/ASX 200 Index (ASX: XJO). The index recorded its worst session since June, closing 2.06% lower at 6957.60 points.",
+    "content": "Only four ASX 200 shares closed in the green on Monday.\nYou’re reading a free article with opinions that may differ from The Motley Fool’s Premium Investing Services. Become a Motley Fool member today to get instant access to our top analyst recommen... [2068 chars]",
+    "url": "https://www.fool.com.au/2022/08/29/here-are-the-top-10-asx-200-shares-today-28/",
+    "image": "https://www.fool.com.au/wp-content/uploads/2021/08/ten-2.jpg",
+    "publishedAt": "2022-08-29T07:01:52Z",
+    "source": {
+        "name": "Motley Fool Australia",
+        "url": "https://www.fool.com.au"
+    }
+},
+
+{
     "title": "Ann Arbor YMCA to celebrate pride with LGBTQ+ Family & Friends Dinner Dance",
     "description": "On Saturday, Sept. 10, join Ann Arbor YMCA for its intergenerational LGBTQ+ Family & Friends Dinner Dance between 5-8 p.m.",
     "content": "ANN ARBOR – A suggestion from the late activist Jim Toy has led to the creation of a welcoming dinner dance for Tree Town’s LGBTQ+ community at the Y.\nOn Saturday, Sept. 10, join Ann Arbor YMCA for its free, intergenerational LGBTQ+ Family & Friends ... [1425 chars]",

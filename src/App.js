@@ -24,12 +24,13 @@ function App() {
 
   const [input, setInput] = useState("");
   const [news, setNews] = useState([]);
+  const [otherPage, setOtherPage] = useState(false);
 
   return (
     <div className="App">
-      <NavBar input={input} setInput={setInput} />
+      <NavBar input={input} setInput={setInput} otherPage={otherPage} setOtherPage={setOtherPage} />
       <Routes>
-        <Route path='/' element={<Home input={input} setInput={setInput} news={news} setNews={setNews} />} />
+        <Route path='/' element={<Home input={input} setInput={setInput} news={news} setNews={setNews} otherPage={otherPage} setOtherPage={setOtherPage} />} />
         <Route path='/:id' element={<ShowNews news={news} />} />
       </Routes>
     </div>

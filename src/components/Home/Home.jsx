@@ -19,11 +19,12 @@ import Loader from '../Loader';
 const tileColor = ["red", "lightseagreen", "orange", "deeppink"];
 let timeoutID = null;
 
-function Home({ input, setInput, news, setNews }) {
+function Home({ input, setInput, news, setNews, otherPage, setOtherPage }) {
     const [loading, setLoading] = useState(false);
     const [language, setLanguage] = useState("en");
     const [lastIndex, setLastIndex] = useState(32);
     const [initialLoad, setInitialLoad] = useState(true);
+    const [discover, setDiscover] = useState(false);
 
     async function getNews() {
         const finalUrl = `${API_URL}?q=${input}&token=${API_KEY}&lang=${language}`
@@ -47,6 +48,32 @@ function Home({ input, setInput, news, setNews }) {
 
     useEffect(() => {
         if (!initialLoad) {
+            if (input === "" && !discover) {
+                setLoading(false);
+                clearTimeout(timeoutID);
+                setNews(globalData);
+                return;
+            }
+            setDiscover(false);
+            setLoading(true);
+            let arr = [];
+            clearTimeout(timeoutID);
+            timeoutID = setTimeout(() => {
+                (async () => {
+                    while (arr.length < 30) {
+                        let newData = await getNews();
+                        arr = await [...arr, ...newData];
+                    }
+                    setLoading(false);
+                    setNews([...arr, ...news]);
+                })()
+            }, [1500])
+        }
+    }, [input])
+
+    useEffect(() => {
+        if (otherPage) {
+            setOtherPage(false);
             if (input === "") {
                 setNews(globalData);
                 return;
@@ -66,7 +93,7 @@ function Home({ input, setInput, news, setNews }) {
                 })()
             }, [1500])
         }
-    }, [input])
+    }, [otherPage])
 
     return (
         <>
@@ -151,7 +178,7 @@ function Home({ input, setInput, news, setNews }) {
                         <div className='Lean'></div>
                     </div>
                     <div className='DiscoverWrapper'>
-                        <DiscoverTiles />
+                        <DiscoverTiles news={news} setNews={setNews} setLoading={setLoading} language={language} setDiscover={setDiscover} />
                     </div>
                 </div>
                 <div className='TrendingContainer'>
@@ -200,7 +227,7 @@ function Home({ input, setInput, news, setNews }) {
                 <br />
                 <br />
                 <br />
-                <Footer />
+                <Footer news={news} setNews={setNews} setLoading={setLoading} language={language} setDiscover={setDiscover} />
             </>}
         </>
     )

@@ -50,9 +50,10 @@
 
 .ShowNewsContainer img {
     border-radius: 0.5rem;
+    width: 70rem;
     box-shadow: 0 15px 15px 0 var(--darker), 0 15px 15px 0 var(--darker);
     border: 1px solid var(--darker);
-    transform: skew(-10deg);
+    transform: skew(-8deg);
     margin-left: 10rem;
 }
 

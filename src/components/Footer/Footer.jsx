@@ -1,6 +1,29 @@
 import './Footer.css';
+import { API_URL, API_KEY } from '../../constants';
 
-function Footer() {
+function Footer({ news, setNews, setLoading, language, setDiscover }) {
+
+    async function getNews(param) {
+        const finalUrl = `${API_URL}?q=${param}&token=${API_KEY}&lang=${language}`
+        const response = await fetch(finalUrl);
+        const data = await response.json();
+        return data.articles;
+    }
+
+    function updateNews(data) {
+        setLoading(true);
+        let arr = [];
+        (async () => {
+            while (arr.length < 30) {
+                let newData = await getNews(data);
+                arr = await [...arr, ...newData];
+            }
+            setLoading(false);
+            setDiscover(true);
+            setNews([...arr, ...news]);
+        })()
+    }
+
     return (
         <>
             <div className='Footer'>
@@ -9,10 +32,10 @@ function Footer() {
                 </h4>
                 <div className='FooterCategoriesWrapper'>
                     <h3>Top categories</h3>
-                    <h5>Business</h5>
-                    <h5>Politics</h5>
-                    <h5>Tech</h5>
-                    <h5>Health</h5>
+                    <h5 onClick={() => updateNews("business")}>Business</h5>
+                    <h5 onClick={() => updateNews("politics")}>Politics</h5>
+                    <h5 onClick={() => updateNews("tech")}>Tech</h5>
+                    <h5 onClick={() => updateNews("health")}>Health</h5>
                 </div>
                 <div className='FooterSocialWrapper'>
                     <h3>Follow Us</h3>

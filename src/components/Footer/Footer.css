@@ -1,5 +1,7 @@
 .Footer {
     background-color: #16181c;
+    background-image: linear-gradient(135deg, #4aeadd77 0%, #9778d177 20%, #cf2ab977 40%, #ee2c838e 60%, #fb6a628f 80%, #fef84c9f 100%);
+    border-top: 2px solid black;
     width: 100%;
     height: 15rem;
     position: relative;
@@ -13,6 +15,7 @@
     position: absolute;
     top: 29%;
     left: 5%;
+    text-shadow: 1px 1px #16181c;
 }
 
 .FooterCategoriesWrapper {
@@ -25,6 +28,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-shadow: 1px 1px #16181c;
 }
 
 .Footer h3 {
@@ -32,6 +36,7 @@
     width: 15%;
     font-weight: 700;
     font-size: 1.2rem;
+    text-shadow: 1px 1px #16181c;
 }
 
 .Footer h5 {
@@ -39,6 +44,7 @@
     width: 15%;
     font-weight: 700;
     font-size: 1rem;
+    text-shadow: 1px 1px #16181c;
 }
 
 .Footer a {
@@ -47,6 +53,7 @@
     width: 15%;
     font-weight: 700;
     font-size: 1rem;
+    text-shadow: 1px 1px #16181c;
 }
 
 .Footer h5:hover {
@@ -71,4 +78,5 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-shadow: 1px 1px #16181c;
 }
