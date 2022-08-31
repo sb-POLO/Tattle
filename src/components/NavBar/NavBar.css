@@ -34,7 +34,7 @@
     margin-top: 5rem;
 }
 
-#Logo:hover{
+#Logo:hover {
     cursor: pointer;
 }
 
@@ -48,6 +48,13 @@
     color: white;
     font-weight: 700;
     font-size: 1rem;
+}
+
+.login-btn:hover {
+    cursor: pointer;
+    background-color: deeppink;
+    border: 1px solid deeppink;
+    box-shadow: 1px 1px 10px deeppink;
 }
 
 .search {
